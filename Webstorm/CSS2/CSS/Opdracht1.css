@@ -1,0 +1,9 @@
+.menuitem li{
+    display:inline-block;
+    width:150px;
+    color:red;
+}
+
+.menuitem a{
+    color:red;
+}

@@ -1,0 +1,23 @@
+body{
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+h1{
+    font-variant: all-small-caps;
+    background-color: red;
+}
+.link:hover{
+    border: 5px blueviolet;
+}
+.stippeltjesrand{
+    border: 1px yellow;
+    border-style: dotted;
+}
+a:link {
+    background-image: url("../IMG/hyperlink.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
