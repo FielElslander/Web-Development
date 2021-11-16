@@ -1,0 +1,24 @@
+td{
+    border: 1px dotted black;
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+}
+td:last-child, td:first-child{
+    background-color: rgb(255,220,220);
+}
+.days{
+    color: rgb(200,190,240);
+    background-color: rgb(35,37,70);
+}
+th{
+    background-color: rgb(170,170,200);
+}
+.vrijedag{
+    background-color: rgb(250,120,120);
+}
+.VorigeMaand{
+    background-color: Lightgrey;
+    color: gray;
+}
