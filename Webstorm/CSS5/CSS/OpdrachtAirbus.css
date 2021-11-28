@@ -1,0 +1,101 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../Opdracht Airbus/fotos/pagebackground.png");
+    background-size: 1032px;
+    background-position: center;
+}
+body{
+    width: 960px;
+    margin: auto;
+}
+header{
+    color: darkblue;
+    height: 200px;
+    background-image: url("../Opdracht Airbus/fotos/bgsky3.jpg");
+    background-repeat: no-repeat;
+}
+header h1{
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+}
+header p{
+    text-align: center;
+    margin: 0;
+    font-size: 240%;
+    font-weight: bold;
+}
+header img{
+    float: right;
+    position: relative;
+    bottom: 120px;
+    right: 90px;
+}
+.News{
+    clear:both;
+    float: right;
+    width: 250px;
+    background-color: #dddddd;
+    border: 1px solid #999999;
+}
+.News h3{
+    font-size: 120%;
+    color:white;
+    background-color: blue;
+}
+.News p{
+    font-size: 90%;
+    padding: 0 10px 0 10px;
+}
+.Main{
+    width: 700px;
+}
+.introduction{
+    background-color: white;
+    margin: 20px 30px 20px 0;
+}
+.introduction p{
+    display: flex;
+}
+.logo{
+    float: left;
+    height: 10em;
+    width: auto;
+}
+.logo img{
+    padding: 0 20px 0 20px;
+}
+.foto{
+    background-color: #999999;
+    margin-left: 0px;
+}
+.foto img{
+    background-color: white;
+    border: 10px solid #999999;
+    padding: 10px;
+    width: 180px;
+    height: 180px;
+    float: left;
+}
+.Bottom{
+    clear: both;
+    color: white;
+    background-color: grey;
+    line-height: 2em;
+}
+.block{
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #545454;
+    padding-left: 120px;
+    float:left;
+}
+.block a:hover{
+    color:red;
+}
+.Copyright{
+    clear:both;
+    text-align: center;
+}
