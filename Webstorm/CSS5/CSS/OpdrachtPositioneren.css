@@ -17,5 +17,23 @@
 }
 article p{
     font-size: 1.25em;
-    display: flex;
 }
+/*
+.even img{
+    float: right;
+}
+.oneven img{
+    float: left;
+}
+
+ */
+
+.oneven img {
+    float: left;
+    margin: 0 10px 0 0 ;
+}
+.even img {
+     float: right;
+     margin: 0 0 0 10px ;
+ }
+

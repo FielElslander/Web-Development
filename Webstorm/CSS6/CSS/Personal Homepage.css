@@ -1,0 +1,51 @@
+html{
+    background-image: url("../IMAGES/Background_imge.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: saddlebrown;
+    }
+body {
+    border-style: solid;
+    border-color: grey;
+    margin-top: 20px;
+    background-color: beige;
+    width: 80%;
+    margin: auto;
+
+}
+.title{
+    color: #30110d;
+    font-size: 3em;
+    text-align: center;
+}
+.table1{
+    width: 80%;
+    margin: auto;
+}
+table, th, td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: brown;
+}
+img{
+    width: 400px;
+    margin: auto;
+}
+.introduction h1{
+    background-color: saddlebrown;
+    color: navajowhite;
+}
+.hobbies h1{
+    background-color: saddlebrown;
+    color: navajowhite;
+
+}
+.likes h1{
+    background-color: saddlebrown;
+    color: navajowhite;
+}
+
+.friends h1{
+    background-color: saddlebrown;
+    color: navajowhite;
+}
