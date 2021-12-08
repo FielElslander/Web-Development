@@ -1,0 +1,113 @@
+/* items */
+
+section div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+/* specific item styles */
+.item-1 {
+    background-color: #b03532;
+}
+.item-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: #33a8a5;
+}
+.item-3 {
+    grid-column-start: 4;
+    background: #30997a;
+}
+.item-4 {
+    grid-row-start: 2;
+    background: #6a478f;
+}
+.item-5 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: #da6f2b;
+}
+.item-6 {
+    grid-column-start: 4;
+    background: #3d8bb1;
+}
+.item-7 {
+    grid-row-start: 3;
+    background: #e03f3f;
+}
+.item-8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background: #59a627;
+}
+.item-9 {
+    grid-column-start:4;
+    background: #4464a1;
+}
+
+@media (max-width: 760px) {
+    section {
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+    .item-1 {
+        display: none;
+        grid-row-start: 5;
+    }
+    .item-2 {
+        background: #33a8a5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .item-3 {
+        background: #30997a;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .item-4 {
+        background: #6a478f;
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    .item-5 {
+        background: #da6f2b;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .item-6 {
+        background: white;
+        display: none;
+        grid-row-start: 5;
+    }
+    .item-7 {
+        background: #e03f3f;
+        grid-row-start: 3;
+    }
+    .item-8 {
+        background: #59a627;
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .item-9 {
+        background: #4464a1;
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+}
+
+
+
