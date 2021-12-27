@@ -1,0 +1,91 @@
+html{
+    background-image: url("images/stripverloopokapi.jpg ");
+}
+body{
+    border: 1px solid black;
+    width: 970px;
+    margin: auto;
+}
+header{
+    background-image: url("images/headerokapi.jpg");
+    background-repeat: no-repeat;
+    height: 180px;
+}
+
+header img{
+    float: left;
+    margin-left: 42%;
+}
+
+h1{
+    margin: 5px;
+}
+
+footer{
+    border-top: 4px solid black;
+    height: 80px;
+    background-color: #eceade;
+}
+
+footer p{
+    text-align: right;
+    float: right;
+    padding-right: 5px;
+    font-size: 1em;
+}
+
+.Navigatie{
+    border-top: 1px solid black;
+    height: 50px;
+    background-color: #eceade;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.Navigatie span{
+    text-align: center;
+    padding-top: 18px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    background-color: #eceade;
+}
+.article1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+}
+.article2{
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.image1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.image2{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+.image3{
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+section img{
+    border: 1px solid black;
+}
+.tussenTekst{
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border: 2px black solid;
+    font-weight: bold;
+    font-style: italic;
+}
+.imageInArtic{
+    width: 150px;
+    float: left;
+    margin: 10px;
+    border: 2px solid black;
+}

@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+}
+html{
+    font-family: Helvetica;
+}
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 10px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-top: 1em;
+    border-bottom: black solid 2px;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 150%;
+    margin-bottom: 1em;
+}
+.header{
+    width: 600px;
+    margin: auto;
+}
+.headerLine{
+    border-bottom: #ebe8e8 solid 1px;
+}
+.header img{
+    height: 50px;
+    width: auto;
+}
+.nav{
+    margin: auto;
+    width: 600px;
+    padding: 10px 0 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto ;
+}
+.nav span{
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    border-left: #ebe8e8 1px solid;
+}
+.nav span:first-child{
+    border-left: none;
+}
+.main{
+    border-top: #ebe8e8 solid 1px;
+}
+.mainHeader{
+    height: 500px;
+    background-image: url("images/headerimage.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px #8D99AE;
+    text-align: center;
+    padding-top: 230px;
+}
+.nav span:hover{
+    border-bottom: #fff100 solid 2px;
+}
+
+.Recipes{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-column-gap: 15px;
+    margin: 50px auto auto auto;
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.articles{
+    width: 600px;
+    margin: auto;
+    padding-top: 1em;
+}
+.text{
+    padding-top: 10px;
+    margin-right: 1em;
+    border-top: #ddd solid 1px;
+}
+.text p{
+    color: #666;
+    line-height: 2;
+}
+.smallTitle{
+    font-size: 1.2em;
+    color: #ff4d56;
+    letter-spacing: 1px;
+}
+.auteur{
+    display: inline;
+    padding-right: 10px;
+    border-right: 1px solid #ebe8e8;
+}
+.timeStamp{
+    color: #666;
+    padding-left: 10px;
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.recommendend{
+    margin: 50px auto auto auto;
+    width: 600px;
+}
+.bootstrImg{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer{
+    border-top: 1px solid #ebe8e8;
+    line-height: 2em;
+}
+
+#left{
+    width: 50%;
+    text-align: right;
+    float: left;
+    clear: both;
+    padding-right: 10px;
+}
+#right{
+    padding-left: 10px;
+    width: 50%;
+    text-align: left;
+    float: right;
+    color: white;
+    background-color: black;
+}
+@media only screen and (min-width: 770px){
+    .header{
+        width: 750px;
+    }
+    .nav{
+        width: 770px;
+    }
+    .articles{
+        width: 750px;
+    }
+    .recommendend{
+        width: 750px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .header{
+        width: 750px;
+    }
+    .nav{
+        width: 770px;
+    }
+    .mainHeader{
+        font-size: 5em;
+        padding-top: 190px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    .header{
+        width: 980px;
+    }
+
+    .nav{
+        width: 1000px;
+    }
+    .articles{
+        width: 980px;
+    }
+    .recommendend{
+        width: 980px;
+    }
+}
