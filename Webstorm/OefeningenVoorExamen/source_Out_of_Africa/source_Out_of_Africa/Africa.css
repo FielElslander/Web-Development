@@ -1,0 +1,36 @@
+html {
+    background-image: url("stripverloopokapi.jpg");
+    background-size: revert;
+}
+body{
+    border: 1px solid black;
+    width: 970px;
+    margin: auto;
+    background-color: beige;
+    text-decoration: none;
+    color: black;
+}
+header{
+    background-image: url("headerokapi.jpg");
+    background-repeat: no-repeat;
+    padding-top: 2px;
+    border: 1px solid black;
+    padding-bottom: 5px;
+
+}
+header img{
+    display: block;
+    vertical-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+.navigation li {
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    text-align: right;
+}
+section{
+    padding-left: 10px;
+}
