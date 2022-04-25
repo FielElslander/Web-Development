@@ -1,0 +1,16 @@
+img{
+    height: 150px;
+    width: 100px;
+    position: relative;
+}
+html{
+    background-color: indigo;
+}
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+#back{
+    position: absolute;
+}
