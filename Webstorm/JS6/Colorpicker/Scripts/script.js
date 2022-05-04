@@ -11,6 +11,7 @@ const setup = () => {
     // maak het blokje rood
     colorDemos[0].style.backgroundColor="rgb(" + 50 +"," + 50 + "," + 50 +")";
 
+    RestoreItems();
 
 }
 
@@ -28,12 +29,11 @@ const update = () => {
 
     colorDemos[0].style.backgroundColor = "rgb(" + sliders[0].value +"," + sliders[1].value + "," + sliders[2].value +")"  ;
 
+
 }
 
 const saveColor = () => {
     let sliders = document.getElementsByClassName("slider");
-
-
     let color = "rgb(" + sliders[0].value +"," + sliders[1].value + "," + sliders[2].value +")"  ;
 
     let colorList = document.getElementById("colorList");
@@ -49,11 +49,15 @@ const saveColor = () => {
     button.addEventListener("click", removeColor);
     div.appendChild(button);
     colorList.appendChild(div);
+
+    StorageAdd();
+
 }
 
 const removeColor = (event) => {
     let colorList = document.getElementById("colorList");
     colorList.removeChild(event.target.parentNode);
+    StorageAdd();
 }
 
 const chooseColor = (event) => {
@@ -73,6 +77,51 @@ const chooseColor = (event) => {
         document.getElementsByClassName("colorDemo")[0].style.backgroundColor
             = "rgb(" + sliders[0].value +"," + sliders[1].value + "," + sliders[2].value +")"  ;
     }
+    StorageAdd();
+}
+
+const StorageAdd = () => {
+    let sliders = document.getElementsByClassName("slider");
+    let colors = document.getElementById("colorList");
+    let kleuren = [];
+    for(let i = 0; i < colors.children.length; i++){
+        kleuren.push(colors.children[i].style.backgroundColor);
+    }
+    for(let i = 0; i < sliders.length; i++){
+        localStorage.setItem("slider" + i,sliders[i].value);
+    }
+    localStorage.setItem("colors",JSON.stringify(kleuren))
+}
+
+const RestoreItems = () => {
+    let sliders = document.getElementsByClassName("slider");
+    let colors = document.getElementById("colorList");
+    let arraycolors = JSON.parse(localStorage.getItem("colors"));
+    let colordemo = document.getElementsByClassName("colorDemo");
+    for(let i = 0; i < arraycolors.length; i++){
+        //div maken met colors
+        let div = document.createElement("div");
+        div.className = "colorDiv";
+        div.addEventListener("click",chooseColor);
+        div.style.backgroundColor = arraycolors[i];
+        //close button maken
+        let button = document.createElement("button");
+        button.className = "colorButton";
+        button.innerHTML = "X";
+        button.addEventListener("click", removeColor);
+        div.appendChild(button);
+        colors.appendChild(div);
+    }
+    for(let i = 0; i < sliders.length; i++){
+        sliders[i].value = localStorage.getItem("slider" + i);
+    }
+
+    document.getElementById("r").innerHTML = "R: " + sliders[0].value;
+    document.getElementById("g").innerHTML = "G: " + sliders[1].value;
+    document.getElementById("b").innerHTML = "G: " + sliders[2].value;
+
+    colordemo[0].style.backgroundColor = "rgb(" + sliders[0].value +"," + sliders[1].value + "," + sliders[2].value +")"  ;
+
 }
 
 
